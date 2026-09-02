@@ -1,0 +1,4 @@
+import type { Metadata } from 'next';
+import './globals.css';
+export const metadata: Metadata={title:'정슬기 | 생태환경 및 환경영향평가 제도 연구원 포트폴리오',description:'한국환경연구원(KEI) 정슬기 연구원 포트폴리오. 환경영향평가 제도 개선, 사후관리 체계, 생물다양성 보전, GIS 공간분석 및 생태 정책 연구.',keywords:['정슬기','환경영향평가제도','사후환경영향조사','한국환경연구원','KEI','생물다양성','조경학','도시생태','경관생태학','공간분석','GIS','서식적합도'],openGraph:{title:'정슬기 | 생태환경 및 환경영향평가 제도 연구원',description:'환경영향평가 제도 개선, 생물다양성 보전, GIS 공간분석 및 생태 정책 연구.',type:'website'}};
+export default function RootLayout({children}:Readonly<{children:React.ReactNode}>){return <html lang="ko"><head><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/></head><body>{children}</body></html>}
