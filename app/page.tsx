@@ -21,7 +21,7 @@ export default function Home() {
   return <main id="top">
     <a className="skip" href="#content">본문으로 건너뛰기</a>
     <header className="header">
-      <a className="wordmark" href="#top" aria-label="정슬기 포트폴리오 첫 화면">JEONG SEULGI<span>.</span></a>
+      <a className="wordmark" href="#top" aria-label="정슬기 교육 실습용 웹사이트 첫 화면">JEONG SEULGI<span>.</span></a>
       <nav className="nav" aria-label="주요 메뉴">{nav.map(([label, href]) => <a key={href} href={href}>{label}</a>)}</nav>
       <a className="header-contact" href="#contact">Contact</a>
       <button className="menu" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-controls="mobile-menu">{menuOpen ? <X size={20} /> : <Menu size={20} />}<span className="sr-only">메뉴 {menuOpen ? '닫기' : '열기'}</span></button>
@@ -30,7 +30,8 @@ export default function Home() {
 
     <section className="band hero" id="content">
       <div className="content hero-content">
-        <p className="eyebrow">Research portfolio / 2026</p>
+        <p className="eyebrow">Educational exercise / 2026</p>
+        <aside className="practice-notice" aria-label="교육 실습용 안내">교육 실습용 웹사이트입니다. 실제 포트폴리오·채용·영업 목적으로 제작되지 않았습니다.</aside>
         <h1>생태 데이터에서<br />실효성 있는 정책까지.</h1>
         <div className="hero-bottom"><p className="lead">정슬기 · 생태환경 및 환경영향평가 제도 연구원<br />과학적 공간분석과 생태 데이터로 지속가능한 국토 이용을 설계합니다.</p><a className="primary-cta" href="#contact">연구 협업 문의 <ArrowUpRight size={16} /></a></div>
       </div>
@@ -46,6 +47,6 @@ export default function Home() {
 
     <section className="band" id="journey"><div className="content"><p className="eyebrow">05 / Experience & education</p><div className="journey"><article><p className="meta">Experience</p><h3>한국환경연구원(KEI)</h3><p className="body">연구원 · 2016.03 – 현재<br />환경영향평가 및 환경정책 연구</p></article><article><p className="meta">Education</p><h3>서울대학교 대학원</h3><p className="body">협동과정 조경학 박사과정 수료 · 2025<br />생태조경학 석사 · 조경학 학사</p></article></div><details><summary>06 / Career vision <span>열기</span></summary><p className="body">국토 개발과 자연환경 보전의 균형을 위해 데이터 기반 생태 분석과 현실성 있는 환경영향평가 제도를 고도화합니다. 학술적 연구 성과를 현장 규제와 실무 지침으로 연결하는 환경 정책·생태 전문가를 지향합니다.</p></details><details><summary>Selected publications & reports <span>열기</span></summary><p className="body">환경영향평가 토지환경 분야의 토지이용 평가항목 고찰 연구 (2021)<br />도시의 환경스트레스가 참새의 번식수행 전략과 개체군 최적상태에 미치는 영향 (2020)<br />환경영향평가 사후환경영향조사 개선 및 환류체계 구축방안 연구 (KEI, 2021)<br />탄소중립 이행을 위한 해상풍력발전의 생태환경적 쟁점 및 개선방향 (KEI 포커스, 2021)</p></details></div></section>
 
-    <section className="band contact" id="contact"><div className="content"><p className="eyebrow">07 / Contact</p><h2>더 나은 환경을 위한<br /><span>대화를 기다립니다.</span></h2><a className="email" href="mailto:j.seulgi106@gmail.com">j.seulgi106@gmail.com <ArrowUpRight size={18} /></a><p className="body">한국환경연구원 (KEI)<br />LinkedIn · ResearchGate · Google Scholar · ORCID: [입력 필요]</p><footer><span>© 2026 Jeong Seulgi</span><a href="#top">Back to top</a></footer></div></section>
+    <section className="band contact" id="contact"><div className="content"><p className="eyebrow">07 / Contact</p><h2>더 나은 환경을 위한<br /><span>대화를 기다립니다.</span></h2><a className="email" href="mailto:j.seulgi106@gmail.com">j.seulgi106@gmail.com <ArrowUpRight size={18} /></a><p className="body">한국환경연구원 (KEI)<br />LinkedIn · ResearchGate · Google Scholar · ORCID: [입력 필요]</p><footer><span>교육 실습용 웹사이트 · 실제 포트폴리오가 아닙니다</span><a href="#top">Back to top</a></footer></div></section>
   </main>;
 }
